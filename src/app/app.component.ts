@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'ng-food-shop';
+  currentFeature: string = 'recipe';
+  onNavigate(feature) {
+    this.currentFeature = feature;
+  }
 }

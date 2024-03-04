@@ -11,4 +11,8 @@ export class ShoppingListComponent {
     new Ingredient('Apple', 5),
     new Ingredient('Tomotaes', 3),
   ];
+  ingredientAdded($event) {
+    this.ingredients.push(new Ingredient($event.name, $event.amount));
+    
+  }
 }
